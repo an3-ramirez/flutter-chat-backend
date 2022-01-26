@@ -43,6 +43,7 @@ const creaUsuario = async (req, res = response) => {
         console.log(error);
         res.status(500).json({
             ok: false,
+            detail: error,
             msg: 'Error general'
         })
     }
